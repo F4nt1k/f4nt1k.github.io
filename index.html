@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4nt1k // Rudolf Lorents</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #080808; color: #fff; font-family: 'Inter', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .bento-box { background: #121212; border: 1px solid #1f1f1f; border-radius: 20px; padding: 24px; transition: 0.3s; }
+        .bento-box:hover { border-color: #3b82f6; background: #161616; }
+        .status-dot { height: 8px; width: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block; margin-right: 8px; box-shadow: 0 0 8px #22c55e; }
+        .tag { background: #1f1f1f; padding: 4px 10px; border-radius: 6px; font-size: 12px; color: #94a3b8; }
+    </style>
+</head>
+<body class="p-4 md:p-12">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4">
+        
+        <div class="bento-box md:col-span-8 flex flex-col justify-between min-h-[240px]">
+            <div>
+                <div class="flex items-center mb-4">
+                    <span class="status-dot"></span>
+                    <span class="mono text-xs text-green-500 uppercase tracking-widest">Active / Seeking for UAE/China Ops</span>
+                </div>
+                <h1 class="text-6xl font-extrabold tracking-tighter mb-4">РУДОЛЬФ <span class="text-zinc-600">ЛОРЕНЦ</span></h1>
+            </div>
+            <p class="text-gray-400 max-w-xl text-lg">
+                Project Manager & СX Expert. Соединяю сложную IT-инфраструктуру с высококлассным сервисом. 
+                10 лет в индустрии — от настройки VLESS-протоколов до управления лояльностью в World Class.
+            </p>
+        </div>
+
+        <div class="bento-box md:col-span-4 flex flex-col justify-center items-center text-center">
+            <span class="text-5xl font-black text-blue-500 mb-2">10+</span>
+            <span class="text-sm font-mono text-gray-500 uppercase">Years in Tech & Sports</span>
+        </div>
+
+        <div class="bento-box md:col-span-4 space-y-4">
+            <h3 class="font-bold text-xl flex items-center gap-2">
+                <span>🛠</span> Infrastructure
+            </h3>
+            <p class="text-sm text-gray-400">Свободный интернет и безопасность данных. Развертывание узлов, защита от блокировок.</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="tag">Ubuntu</span> <span class="tag">VLESS</span> <span class="tag">Docker</span> <span class="tag">Security</span>
+            </div>
+        </div>
+
+        <div class="bento-box md:col-span-4 space-y-4 border-l-4 border-l-green-600">
+            <h3 class="font-bold text-xl flex items-center gap-2">
+                <span>⚡️</span> Premium Service
+            </h3>
+            <p class="text-sm text-gray-400">Мягкие продажи и управление клиентским опытом в фитнес-сетях топового уровня.</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="tag">World Class</span> <span class="tag">DDX</span> <span class="tag">UHNWI</span> <span class="tag">Soft Sales</span>
+            </div>
+        </div>
+
+        <div class="bento-box md:col-span-4 flex flex-col justify-between">
+            <h3 class="font-bold text-xl">Gaming DNA</h3>
+            <p class="text-xs text-gray-500 mono">CS2 / Dota 2 Enthusiast. 10+ years of competitive experience.</p>
+            <a href="https://steamcommunity.com/profiles/ТВОЙ_ID" target="_blank" class="mt-4 block text-center py-2 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition text-sm">View Steam Profile</a>
+        </div>
+
+        <div class="bento-box md:col-span-6 space-y-4">
+            <h3 class="font-bold text-xl">Automation & Bots</h3>
+            <p class="text-sm text-gray-400 italic">"Зачем делать руками то, что может сделать Python?"</p>
+            <ul class="text-sm space-y-2 text-gray-300">
+                <li>• Системы записи для фотостудий</li>
+                <li>• Финансовые трекеры в Telegram</li>
+                <li>• AI-интеграции для анализа данных</li>
+            </ul>
+        </div>
+
+        <div class="bento-box md:col-span-6 flex flex-col justify-between bg-gradient-to-br from-blue-900/20 to-transparent">
+            <h3 class="font-bold text-xl">Current Focus</h3>
+            <div class="space-y-3 mt-4">
+                <div class="flex justify-between text-xs mono"><span>Harbin Inst. of Tech (HIT) Scholarship</span> <span class="text-blue-400">90%</span></div>
+                <div class="w-full bg-zinc-800 h-1.5 rounded-full"><div class="bg-blue-500 h-1.5 rounded-full w-[90%]"></div></div>
+                <div class="flex justify-between text-xs mono"><span>Relocation to Dubai / China</span> <span class="text-yellow-500">In Progress</span></div>
+            </div>
+        </div>
+
+        <div class="md:col-span-12 flex flex-col md:flex-row justify-between items-center p-8 mt-4 border-t border-zinc-900">
+            <div class="flex gap-8 mb-4 md:mb-0">
+                <a href="https://t.me/f4nt1k" class="hover:text-blue-500 transition">Telegram</a>
+                <a href="mailto:твой@мейл.com" class="hover:text-blue-500 transition">Email</a>
+                <a href="#" class="hover:text-blue-500 transition">LinkedIn</a>
+            </div>
+            <p class="mono text-xs text-zinc-600">Built by F4nt1k // 2026</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
