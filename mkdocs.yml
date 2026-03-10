@@ -1,1 +1,36 @@
 
+site_name: F4nt1k // Rudolf Lorents
+site_description: Project Manager & CX Expert
+site_author: Rudolf Lorents
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: slate
+      primary: black
+      accent: light green
+  font:
+    text: Golos Text
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - header.autohide
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - ⚡️ Главная: index.md
+  - 🛠 Архитектура & AI: tech.md
+  - 💎 CX & Premium Service: cx-fitness.md
+  - 🌍 Roadmap: roadmap.md
