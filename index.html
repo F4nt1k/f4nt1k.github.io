@@ -3,42 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rudolf Lorents | F4nt1k</title>
+    <title>Rudolf Lorents | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0f172a; color: #f8fafc; font-family: sans-serif; }
-        .card { background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
-        .card:hover { border-color: #3b82f6; }
+        body { background-color: #050505; color: #fff; font-family: 'Inter', sans-serif; }
+        .bento-card { 
+            background: #111; 
+            border: 1px solid #222; 
+            border-radius: 24px; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            position: relative;
+        }
+        .bento-card:hover { border-color: #444; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .gradient-text { background: linear-gradient(90deg, #fff, #666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="p-8 md:p-24">
-    <div class="max-w-3xl mx-auto">
-        <header class="mb-16">
-            <h1 class="text-5xl font-extrabold mb-4">Рудольф Лоренц</h1>
-            <p class="text-xl text-blue-400 font-mono">IT Project Manager & Fitness Expert</p>
-        </header>
+<body class="p-4 md:p-12">
 
-        <section class="space-y-6">
-            <div class="card p-8 rounded-3xl">
-                <h2 class="text-2xl font-bold mb-3 text-white">Инфраструктура и Безопасность</h2>
-                <p class="text-gray-400 text-lg">Настройка защищенных серверов (VLESS, Shadowsocks, Docker). Делаю так, чтобы интернет работал стабильно и без границ. Только надежные решения на Linux.</p>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 h-auto md:h-[80vh]">
+        
+        <div class="bento-card md:col-span-2 md:row-span-2 p-8 flex flex-col justify-end">
+            <div class="absolute top-8 left-8 text-xs font-mono text-gray-500 uppercase tracking-widest text-blue-500">Available for projects</div>
+            <h1 class="text-5xl font-bold tracking-tighter mb-4 gradient-text">РУДОЛЬФ<br>ЛОРЕНЦ</h1>
+            <p class="text-gray-400 text-lg max-w-xs">IT Project Manager & Fitness Expert. Автоматизирую бизнес, строю защищенные сети и тренирую атлетов премиум-класса.</p>
+        </div>
+
+        <div class="bento-card md:col-span-2 p-6 flex flex-col justify-between group">
+            <div class="flex justify-between items-start">
+                <h3 class="font-bold text-xl">Infrastructure</h3>
+                <span class="text-blue-500 font-mono text-sm">VLESS / DOCKER</span>
             </div>
+            <p class="text-sm text-gray-400">Настройка и администрирование защищенных серверов. Свободный интернет без компромиссов.</p>
+        </div>
 
-            <div class="card p-8 rounded-3xl">
-                <h2 class="text-2xl font-bold mb-3 text-white">Автоматизация процессов</h2>
-                <p class="text-gray-400 text-lg">Разработка Telegram-ботов и AI-решений для бизнеса. Заменяю рутину в Excel на умные алгоритмы. Мои боты помогают фотографам и студиям управлять заказами.</p>
+        <div class="bento-card md:col-span-1 p-6 flex flex-col justify-between">
+            <h3 class="font-bold text-lg leading-tight">Premium<br>Fitness</h3>
+            <div class="text-xs text-gray-500 uppercase tracking-tighter">World Class / DDX</div>
+        </div>
+
+        <div class="bento-card md:col-span-1 p-6 flex flex-col justify-between bg-zinc-900">
+            <h3 class="font-bold text-lg leading-tight">AI & Bots</h3>
+            <p class="text-xs text-gray-400">Python-автоматизация для фотографов и студий.</p>
+        </div>
+
+        <div class="bento-card md:col-span-2 p-6 flex items-center justify-between">
+            <div>
+                <h3 class="font-bold">Hardcore Gaming</h3>
+                <p class="text-xs text-gray-500">10+ years in CS2 / Dota 2</p>
             </div>
-
-            <div class="card p-8 rounded-3xl">
-                <h2 class="text-2xl font-bold mb-3 text-white">Премиальный Фитнес-Сервис</h2>
-                <p class="text-gray-400 text-lg">Опыт работы в World Class и DDX. Специализируюсь на VIP-сегменте. Мой подход — это результат через дисциплину и сервис, без агрессивных продаж.</p>
+            <div class="flex gap-2 text-[10px] font-mono">
+                <span class="px-2 py-1 bg-zinc-800 rounded">STRATEGY</span>
+                <span class="px-2 py-1 bg-zinc-800 rounded">SKILL</span>
             </div>
-        </section>
+        </div>
 
-        <footer class="mt-20 pt-10 border-t border-gray-800 flex justify-between">
-            <a href="https://t.me/f4nt1k" class="text-blue-400 hover:underline">Telegram</a>
-            <span class="text-gray-600">2026 // Moscow</span>
-        </footer>
+        <div class="bento-card md:col-span-2 p-6 flex items-center justify-center bg-blue-600 hover:bg-blue-500 border-none cursor-pointer">
+            <a href="https://t.me/f4nt1k" class="text-white font-bold text-xl uppercase tracking-widest">Связаться в Telegram</a>
+        </div>
+
     </div>
+
 </body>
 </html>
